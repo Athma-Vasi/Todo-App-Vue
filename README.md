@@ -1,68 +1,67 @@
-# todo-list-app
+# Todo List App
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a simple Todo List app built with Vue 3, Tailwind CSS, Pinia, and Vite. The purpose of this project is to serve as a learning tool for the author to learn Vue 3 and state management with Pinia.
+It is very barebones at the moment, but the author plans to add more features and functionality in the future and possibly a complete rewrite using Vuetify.
 
-## Recommended IDE Setup
+**Screenshot**
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+<div align="center">
+    <img src="./src/assets/images/todo-vue.png" alt="screenshot of app" width="100px" />
+</div>
 
-## Type Support for `.vue` Imports in TS
+### What I learned
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- **Differences between Vue and React**:
+  - **Template vs JS**X: Vue uses templates, which allow developers to define HTML-like syntax for their component's structure and rendering. React, on the other hand, uses JSX, which allows developers to write JavaScript code that defines their component's structure and rendering.
+  - **Reactivity**: Vue's reactivity system is more straightforward and intuitive than React's. Vue automatically tracks changes to data and updates the view accordingly, while React requires developers to manually manage state and use methods like setState() to trigger re-renders.
+  - **Component Composition**: allows developers to organize their component logic in a more scalable and reusable way, making it easier to share code across components. React has its own set of techniques and patterns for component composition.
+  - **Ease of Learning**: Vue has a simpler and more intuitive API than React. Vue also offers a more consistent and opinionated framework, while React is more flexible but requires more setup and configuration.
+  - **Community and Ecosystem**: React has a larger and more established community and ecosystem than Vue, with more third-party libraries, tools, and resources available. However, Vue has been growing in popularity in recent years and has a strong and supportive community.
+- **Vue 3**: components, directives, data binding, event handling
+  - **Composition API**: functions and objects to define component logic
+  - **New reactivity system**: uses Proxies, a leaner template compiler, and better static analysis for template rendering
+  - **Better TypeScript support**: better type inference, better type checking, and better type errors
+  - **Global API**: more consistent and intuitive way to access Vue functionality
+- **Pinia**: state management, reactive data, stores, actions, mutations
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Features
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+- Add new tasks to the list
+- Mark tasks as completed or uncompleted
+- Delete tasks from the list
 
-## Customize configuration
+### Getting Started
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+#### Prerequisites
 
-## Project Setup
+Node.js (v16 or higher) and npm (v7 or higher)
 
-```sh
-npm install
-```
+#### Installing
 
-### Compile and Hot-Reload for Development
+- Clone this repository
+- Navigate to the project directory in your terminal
+- Run npm install to install the dependencies
+- Run npm run dev to start the development server
+- Open your browser and go to http://localhost:3000
 
-```sh
-npm run dev
-```
+#### Building for Production
 
-### Type-Check, Compile and Minify for Production
+Run npm run build to build the production-ready code
+The output will be generated in the dist folder
 
-```sh
-npm run build
-```
+### Technologies Used
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+- [Vue 3](https://vuejs.org/) - The progressive JavaScript framework for building user interfaces
+- [Tailwind CSS](https://tailwindcss.com/docs/installation) - A utility-first CSS framework for rapidly building custom designs
+- [Pinia](https://pinia.vuejs.org/) - A state management system for Vue.js
+- [Vite](https://vitejs.dev/) - A build tool that provides a faster and leaner development experience
 
-```sh
-npm run test:unit
-```
+### Credits and Acknowledgments
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+This project was inspired by [todo-pinia](https://github.com/deepgram-devs/todo-pinia/tree/main) and Vue 3 Todo List Tutorial.
 
-```sh
-npm run test:e2e:dev
-```
+Thanks to Vue.js, Tailwind CSS, Pinia, and Vite teams for providing excellent tools and documentation.
 
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
+Thanks to Vue Mastery for providing great tutorials and courses
 
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-npm run build
-npm run test:e2e
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+.
